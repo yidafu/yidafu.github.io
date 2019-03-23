@@ -39,10 +39,11 @@ var config = {
     name: 'posts',
       layout: { list: 'post-list', single: 'post' },
     },
-    {
-      name: 'pages',
-      layout: { list: 'page-list', single: 'page' },
-    },
+    // 如果 pages 目录为空就注释掉下面代码，否则 init 里面 dispatchEvent 不会触发
+    // {
+    //   name: 'pages',
+    //   layout: { list: 'page-list', single: 'page' },
+    // },
   ],
 };
 
