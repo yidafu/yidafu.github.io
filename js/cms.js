@@ -284,8 +284,8 @@ var CMS = function(config) {
   function formatDate(dateString) {
     var date = new Date(dateString);
     date.setDate(date.getDate() + 1);
-    return [date.getDate(),
-      (date.getMonth() + 1),date.getFullYear()].join('/');
+    return [date.getFullYear(),
+      (date.getMonth() + 1), date.getDate()].join('/');
   }
 
   /**
