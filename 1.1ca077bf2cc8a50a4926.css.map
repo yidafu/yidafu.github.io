@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/Squid/Navbar/navbar.scss"],"names":[],"mappings":"AAAA,cAAc,YAAY,wBAAwB,CAAC,gBAAgB,gBAAgB,C","file":"1.1ca077bf2cc8a50a4926.css","sourcesContent":[".squid-navbar{height:66px;background-color:#f8f9fa}.squid-navbar a{font-size:1.5rem}"],"sourceRoot":""}
