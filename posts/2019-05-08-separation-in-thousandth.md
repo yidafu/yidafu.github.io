@@ -80,7 +80,7 @@ return strBuffer.join( ',' );
 
 这里借助了正则表达式的一个特性：
 
-每次匹配总是从`lastIndex`指定的索引开始匹配。可以借此来跳过多出来的最高位，是的与`/\d{3}/g`匹配的子串长度始终是`3`的倍数。
+每次匹配总是从`lastIndex`指定的索引开始匹配。可以借此来跳过多出来的最高位，使得与`/\d{3}/g`匹配的子串长度始终是`3`的倍数。
 
 >  lastIndex is set to the next position following the most recent match.
 
@@ -110,7 +110,7 @@ function (money) {
 strBuffer.unshift( money.substring( i - 3, i) );
 ```
 
-这里并没有去判断`i - 3`是否大于`0`。实际上存在`i - 3 < 0`的情况。
+这里并没有去判断`i - 3`是否小于`0`。实际上存在`i - 3 < 0`的情况。
 
 > Any argument value that is less than 0 or greater than stringName.length is treated as if it were 0 and stringName.length respectively. Any argument value that is NaN is treated as if it were 0.
 
@@ -141,6 +141,11 @@ function (money) {
 }
 ```
 
+TODO
+
+具体解释参考[这里](https://juejin.im/post/5abb5b01f265da237f1e5a92).
+
+
 ## 一行代码解法
 
 ```js
@@ -164,7 +169,11 @@ function (money) {
 }
 ```
 
+TODO
+
 ## 总结
+
+TODO
 
 <!-- 解决问题的方法并不唯一 -->
 
