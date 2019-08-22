@@ -1,0 +1,17 @@
+{
+  "title": "Dov Yih's Blog",
+  "content": [
+    {
+      "title": "My First Post",
+      "excerpt": "A lost person.",
+      "date": "2019-03-23T00:00:00.000Z",
+      "tags": [
+        "void"
+      ],
+      "author": "yidafu",
+      "status": "publish",
+      "filePath": "posts/2019-03-23-first-blog.md",
+      "fileName": "2019-03-23-first-blog"
+    }
+  ]
+}
