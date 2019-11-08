@@ -6,7 +6,7 @@ tags:
   - javascript
   - algorithm
 author: yidafu
-status: draft
+status: publish
 ---
 
 ## 问题描述
@@ -104,7 +104,7 @@ function (money) {
 
 Oh wooo! 是不是非常简洁。
 
-这里还有个小知识点不知道读者你发现了没？
+这里还有个小知识点。
 
 ```js
 strBuffer.unshift( money.substring( i - 3, i) );
@@ -160,7 +160,7 @@ function (money) {
 具体解释参考[这里](https://juejin.im/post/5abb5b01f265da237f1e5a92).
 
 
-## 一行代码解法
+## 数组反序解法
 
 ```js
 // 真一行解法 (^_^)
@@ -169,7 +169,7 @@ function (money) {
 }
 ```
 
-咳咳，格式化一下：
+格式化一下：
 
 ```js
 function (money) {
@@ -210,7 +210,7 @@ function (money) {
 
 ## 总结
 
-
+推荐反向遍历的解法。相比其他花里胡哨的解法，效率更高，更容易理解。
 
 <!-- 解决问题的方法并不唯一 -->
 
