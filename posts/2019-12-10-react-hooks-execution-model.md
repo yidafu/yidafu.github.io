@@ -86,8 +86,10 @@ useEffect 有两个参数，第一个参数是回调函数，第二个参数用�
 function PaperList({ userId }) {
   ...
   useEffect(() => {
-    const paperList = fetchPaperList(userId);
-    setPaperList(paperList);
+    ajax(`/paperList/${userId}`)
+      .then((paperList) => {
+        setPaperList(paperList);
+      });
   }, [userId]);
   ...
 }
@@ -99,7 +101,7 @@ function PaperList({ userId }) {
 
 现在新的需求来了，希望能够删除 paper。后端也提供了一个删除 paper 的接口。
 
-```js
+```jsx
 function PaperItem(props) {
   const { data } = props;
 
@@ -120,4 +122,59 @@ function PaperItem(props) {
 }
 ```
 
-等等，漏掉了什么？我们期望：成功删除一篇 paper 以后，paper 列表应该始终是最新的。我们没有去重新获取 paper 列表。
+等等，漏掉了什么？我们期望：成功删除一篇 paper 以后，应该去刷新paper 列表。
+
+可以直接传一个回调函数到 PaperItem 里，但删除成功以后执行这个回调函数。
+
+```jsx
+function PaperItem(props) {
+  const { data, refreshPaperList } = props;
+
+  const handleDelete = () => {
+    ajax({ url: `/paper/${data.id}`, method: 'DELETE' })
+      .then((success) => {
+        if (success) {
+          refreshPaperList();
+          alert('删除成功');
+        }
+      });
+  };
+  ...
+}
+
+function PaperList({ userId }) {
+  ...
+  const fetchPaperList = () => {
+    ajax('/paperList')
+      .then((paperList) => {
+        setPaperList(paperList);
+      });
+  }
+
+  useEffect(() => {
+    fetchPaperList(userId);
+  }, [userId]);
+
+  return (
+    <ul>
+      {
+        paperList.map(paper => (
+          <PaperItem
+            key={paper.id}
+            data={paper}
+            refreshPaperList={fetchPaperList}
+          />
+        ))
+      }
+    </ul>
+  );
+}
+```
+
+## 更多的操作
+
+`PaperList`看起来完全满足了前面需求。
+
+BUT，现在新的需要又出现了，在另外的一处地方也用到了 PaperList 组件，但是操作多了一个『跳转』，点击以后能够到跳转 paper 详情页。
+
+之前的 `PaperList`有些不够用了。
