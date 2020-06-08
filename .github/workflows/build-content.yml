@@ -25,8 +25,7 @@ jobs:
         node-version: 12.x
 
     - name: update content.json
-    - run: yarn
-    - run: yarn build
+      run: yarn && yarn build
 
     - name: Commit files
       run: |
