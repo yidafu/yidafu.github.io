@@ -5,7 +5,7 @@ date: 2019-03-23
 tags: 
   - void
 author: yidafu
-status: publish
+status: draft
 ---
 
 前行就要做好孤独的准备。
