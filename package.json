@@ -1,0 +1,32 @@
+{
+  "name": "yidafu.dev",
+  "version": "0.0.1",
+  "description": "yidafu.dev blog site",
+  "main": "index.js",
+  "dependencies": {
+    "@dovyih/nice-drink": "0.0.1-alpha.6",
+    "argparse": "^1.0.10",
+    "esprima": "^4.0.1",
+    "js-yaml": "^3.13.1",
+    "sprintf-js": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "drink update",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yidafu/yidafu.github.io.git"
+  },
+  "keywords": [
+    "blog",
+    "nice-drink"
+  ],
+  "author": "yidafu (dov yih)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/yidafu/yidafu.github.io/issues"
+  },
+  "homepage": "https://github.com/yidafu/yidafu.github.io#readme"
+}
