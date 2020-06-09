@@ -15,18 +15,6 @@
       "fileName": "2017-11-17-in-order-non-recursive-traversal-of-binary-trees"
     },
     {
-      "title": "My First Post",
-      "excerpt": "A lost person.",
-      "date": "2019-03-23T00:00:00.000Z",
-      "tags": [
-        "void"
-      ],
-      "author": "yidafu",
-      "status": "publish",
-      "filePath": "posts/2019-03-23-first-blog.md",
-      "fileName": "2019-03-23-first-blog"
-    },
-    {
       "title": "数字表示成千位分隔形式的几种解法",
       "excerpt": "回字的四种写法问题",
       "date": "2019-03-23T00:00:00.000Z",
