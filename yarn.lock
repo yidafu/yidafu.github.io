@@ -824,10 +824,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@dovyih/nice-drink@0.0.1-alpha.8":
+"@dovyih/nice-drink@^0.0.1-alpha.8":
   version "0.0.1-alpha.8"
-  resolved "https://registry.npmjs.org/@dovyih/nice-drink/-/nice-drink-0.0.1-alpha.8.tgz#f80a23617d4fb1a3beca127f31a5b23cac750c04"
-  integrity sha512-Y5GNqrt3j7CaqjZYY6cfUON+/R+Hr1t2zSzLQb6k0dzz+5E+cWp5Y4d2td4em99CRo/wX2YRM9QjV4wfacjPMA==
+  resolved "https://registry.npm.taobao.org/@dovyih/nice-drink/download/@dovyih/nice-drink-0.0.1-alpha.8.tgz#f80a23617d4fb1a3beca127f31a5b23cac750c04"
+  integrity sha1-+AojYX1PsaO+yhJ/MaWyPKx1DAQ=
   dependencies:
     "@babel/core" "^7.10.2"
     "@babel/preset-env" "^7.10.2"
