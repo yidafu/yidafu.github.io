@@ -7,7 +7,7 @@
     "argparse": "^1.0.10",
     "esprima": "^4.0.1",
     "js-yaml": "^3.13.1",
-    "nice-drink": "^0.0.3-beta.5",
+    "nice-drink": "0.0.3-beta.7",
     "sprintf-js": "^1.0.3"
   },
   "devDependencies": {},
