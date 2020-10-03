@@ -4,10 +4,10 @@
   "description": "yidafu.dev blog site",
   "main": "index.js",
   "dependencies": {
-    "@dovyih/nice-drink": "^0.0.1-alpha.8",
     "argparse": "^1.0.10",
     "esprima": "^4.0.1",
     "js-yaml": "^3.13.1",
+    "nice-drink": "^0.0.3-beta.5",
     "sprintf-js": "^1.0.3"
   },
   "devDependencies": {},
