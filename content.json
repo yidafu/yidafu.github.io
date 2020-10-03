@@ -2,28 +2,34 @@
   "title": "Dov Yih's Blog",
   "content": [
     {
-      "title": "withoutFrontMatter",
+      "title": "2017-11-17-in-order-non-recursive-traversal-of-binary-trees",
+      "status": "publish",
+      "created": "2020-10-04",
+      "modified": "2020-10-04",
+      "excerpt": "void",
+      "date": "2017-11-17T00:00:00.000Z",
+      "tags": [
+        "cpp",
+        "algorihm"
+      ],
       "author": "Dov Yih",
-      "created": "2019-08-18 11:10:20",
-      "modified": "2019-08-18 11:10:20",
-      "filePath": "posts/withoutFrontMatter.md",
-      "fileName": "withoutFrontMatter"
+      "filepath": "posts/2017-11-17-in-order-non-recursive-traversal-of-binary-trees.md",
+      "filename": "2017-11-17-in-order-non-recursive-traversal-of-binary-trees"
     },
     {
-      "title": "index",
-      "author": "Dov Yih",
-      "created": "2019-08-18 11:09:52",
-      "modified": "2019-08-18 11:09:52",
-      "filePath": "posts/index.md",
-      "fileName": "index"
-    },
-    {
-      "title": "Doggy Heaven",
-      "author": "Larry Huggins",
-      "created": "2019-08-18 11:09:52",
-      "modified": "2019-08-18 11:09:52",
-      "filePath": "posts/withFrontMatter.md",
-      "fileName": "withFrontMatter"
+      "title": "2019-05-08-separation-in-thousandth",
+      "status": "publish",
+      "created": "2020-10-04",
+      "modified": "2020-10-04",
+      "excerpt": "回字的四种写法问题",
+      "date": "2019-03-23T00:00:00.000Z",
+      "tags": [
+        "javascript",
+        "algorithm"
+      ],
+      "author": "yidafu",
+      "filepath": "posts/2019-05-08-separation-in-thousandth.md",
+      "filename": "2019-05-08-separation-in-thousandth"
     }
   ]
 }
