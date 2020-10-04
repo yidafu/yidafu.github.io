@@ -28,13 +28,13 @@ jobs:
       run: yarn && yarn build && git status
     - name: Commit files
       run: |
-        cp ./content.json ./content.json.blk
+        git stash
         pwd
         ls
         # git checkout ./content.json
         git checkout master
         ls
-        mv ./content.json.blk ./content.json
+        git stash pop
         ls
         git status
         git add ./content.json
