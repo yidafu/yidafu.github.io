@@ -29,10 +29,16 @@ jobs:
     - name: Commit files
       run: |
         cp ./content.json ./content.json.blk
-        git checkout ./content.json
+        pwd
+        ls
+        # git checkout ./content.json
         git checkout master
+        ls
         mv ./content.json.blk ./content.json
+        ls
+        git status
         git add ./content.json
+        git status
         git config --local user.email "tiaozuwushi@qq.com"
         git config --local user.name "yidafu"
         git status
