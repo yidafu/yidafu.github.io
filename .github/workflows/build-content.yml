@@ -28,14 +28,12 @@ jobs:
       run: yarn && yarn build && git status
     - name: Commit files
       run: |
-        git add ./content.json
-        git stash
-        pwd
+        # git add ./content.json
         ls
         # git checkout ./content.json
         git checkout master
         ls
-        git stash pop
+        git add ./content.json
         ls
         git status
         git config --local user.email "tiaozuwushi@qq.com"
