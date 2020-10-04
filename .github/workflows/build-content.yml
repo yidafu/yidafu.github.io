@@ -26,7 +26,9 @@ jobs:
 
     - name: update content.json
       run: yarn && yarn build
-
+    - name: move content.json master branch
+      run: cp ./content.json ./content.json.blk && git checkout ./content.json
+      run: git checkout master && mv ./content.json.blk ./content.json && git add ./content.json
     - name: Commit files
       run: |
         git config --local user.email "tiaozuwushi@qq.com"
@@ -36,4 +38,4 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: default
+        branch: master
