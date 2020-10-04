@@ -28,11 +28,11 @@ jobs:
       run: yarn && yarn build && git status
     - name: Commit files
       run: |
-        # git add ./content.json
+        mv content.json content.json.blk
         ls
-        # git checkout ./content.json
         git checkout master
         ls
+        mv -f content.json.blk content.json
         git add ./content.json
         ls
         git status
