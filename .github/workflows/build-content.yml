@@ -28,6 +28,7 @@ jobs:
       run: yarn && yarn build && git status
     - name: Commit files
       run: |
+        git add ./content.json
         git stash
         pwd
         ls
@@ -36,8 +37,6 @@ jobs:
         ls
         git stash pop
         ls
-        git status
-        git add ./content.json
         git status
         git config --local user.email "tiaozuwushi@qq.com"
         git config --local user.name "yidafu"
