@@ -26,15 +26,13 @@ jobs:
 
     - name: update content.json
       run: yarn && yarn build
-    - name: move content.json master branch
+    - name: Commit files
       run: |
         cp ./content.json ./content.json.blk
         git checkout ./content.json
         git checkout master
         mv ./content.json.blk ./content.json
         git add ./content.json
-    - name: Commit files
-      run: |
         git config --local user.email "tiaozuwushi@qq.com"
         git config --local user.name "yidafu"
         git commit -m "build: update content.json by gtihub action" -a
